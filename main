@@ -1,0 +1,36 @@
+public class Lab001 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Balance s1 = null;
+        s1 = new Balance();
+        int sum = 0;
+        System.out.println("Nhap so bill: ");
+        int n = sc.nextInt();
+        int[] bill= new int[n];
+        
+        for (int i=0;i<n;i++){
+            bill[i] = sc.nextInt();
+        }
+        
+        for (int i=0;i<n;i++){
+            sum = sum + bill[i];
+        }
+        
+        
+        s1.inputBalance();
+        
+        if (sum <= s1.balance){
+            System.out.println("Enough balance");
+        } else {
+            System.out.println("Not enough balance");
+        }
+        
+
+        
+    }
+    
+}
