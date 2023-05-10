@@ -1,0 +1,14 @@
+public class Balance {
+    public int balance;
+
+
+    public void inputBalance(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input balance: ");
+        balance = sc.nextInt();sc = new Scanner(System.in);
+    }
+    
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+}
